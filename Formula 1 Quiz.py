@@ -8,4 +8,7 @@ if player_age <= 18 and player_age >= 15:
     easygui.msgbox("You are old enough for this quiz")
     easygui.msgbox("Welcome to the F1 quiz")
 else:
-    easygui.msgbox("You're not old enough to do this quiz.")
+    easygui.msgbox("You're not old enough to do this quiz.")    
+player_name = easygui.enterbox("Hi What is your name?")
+easygui.msgbox(" Hi "+ player_name +" Welcome to the F1 quiz ")
+easygui.msgbox("First question")
