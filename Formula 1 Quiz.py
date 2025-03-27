@@ -18,6 +18,28 @@ if answer == "2024":
     player_score += 1  
 else: 
     easygui.msgbox("Sorry you got it wrong")
+        easygui.msgbox("Sorry you got it wrong")
+answer = easygui.choicebox("How long is Max Verstappen's contract ",choices = ["Until 2028", "Until 2027", "Until 2026", "Until 2025"])
+if answer == "Until 2028":
+        easygui.msgbox("Great work! you got it right")
+        player_score +=1
+else:
+        easygui.msgbox("Sorry you got it wrong")
+answer = easygui.choicebox("Who is the richest formula 1 driver?",choices = ["Lewis", "Charles", "Yuki","Lance"])
+if answer == "Lewis":
+        easygui.msgbox("Great work! you got it right")
+        player_score +=1
+else:
+        easygui.msgbox("Sorry you got it wrong")
+answer = easygui.choicebox("In what year did formula 1 begin",choices = ["1940","1950","1960","1970"])
+if answer == "1950":
+        easygui.msgbox("Great work! you got it right")
+        player_score +=1
+else:
+        easygui.msgbox("Sorry you got it wrong")
+
+if player_age > 18 or player_age < 15:
+    easygui.msgbox("You're not old enough to do this quiz.")    
 
 if player_age > 18 or player_age < 15:
     easygui.msgbox("You're not old enough to do this quiz.") 
