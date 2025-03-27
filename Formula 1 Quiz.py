@@ -41,5 +41,4 @@ else:
 if player_age > 18 or player_age < 15:
     easygui.msgbox("You're not old enough to do this quiz.")    
 
-if player_age > 18 or player_age < 15:
-    easygui.msgbox("You're not old enough to do this quiz.") 
+
