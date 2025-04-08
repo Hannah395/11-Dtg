@@ -8,7 +8,7 @@ Q_4 = [" 1940 ","1950" , " 1960 "," 1970 "]
 Q_5 = [" Liam and Yuki "," Pierre and Jack ","Lando and Oscar"," Max and Carlos "]
 easygui.msgbox("Hi welcome to my quiz")
 easygui.msgbox("This quiz is about Formula one! Test your knowledge")
-player_age = easygui.integerbox("how old are you?")
+player_age = int(easygui.enterbox("how old are you?"))
 if player_age <= 18 and player_age >= 15:  
     easygui.msgbox("You are old enough for this quiz")
     easygui.msgbox("Welcome to the F1 quiz")
