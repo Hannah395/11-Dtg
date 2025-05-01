@@ -40,7 +40,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Great work! you got it right")
         player_score +=1
     while  answer != "Until 2028" and counter < 2:
-        easygui.msgbox("Sorry you got it wrong")
+        easygui.msgbox("Sorry you got it wrong. Try again")
         counter += 2
     answer = easygui.choicebox("How long is Max Verstappen's contract ",choices = Q_2)
     if answer == "Until 2028":
@@ -54,7 +54,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Great work! you got it right")
         player_score +=1
     while  answer != "Lewis" and counter < 2:
-        easygui.msgbox ("Sorry you got it wrong")
+        easygui.msgbox ("Sorry you got it wrong. Try again")
         counter += 2
         answer = easygui.choicebox("Who is the richest formula 1 driver?",choices = Q_3) 
     if answer == "Lewis":
@@ -68,7 +68,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Great work! you got it right")
         player_score +=1
     while answer != "1950" and counter < 2:
-        easygui.msgbox("Sorry you got it wrong")
+        easygui.msgbox("Sorry you got it wrong. Try again")
         counter += 2 
         answer = easygui.choicebox("In what year did formula 1 begin",choices = Q_4)
     if answer == "1950":
@@ -82,7 +82,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox ("Great work! you got it right")
         player_score +=1
     while answer != " Lando and Oscar" and counter < 2:
-        easygui.msgbox("Sorry you got it wrong")
+        easygui.msgbox("Sorry you got it wrong. Try again")
         counter += 2
         answer = easygui.choicebox("What two drivers are currently at Mclaren?",choices = Q_5)
     if answer == "Lando and Oscar":
