@@ -22,6 +22,8 @@ if player_age <= 18 and player_age >= 15:
     #These are my 5 questions for my quiz each one has the answer in there and also has points to add if you get it right
     # There is also a loop in my questions so if you get it wrong once you can have another try and get half a point if you get it right.
     easygui.msgbox("First question")
+    answer = easygui.choicebox("What year did Daniel Riccardo lose his seat?",choices = Q_1)
+    counter = 0
     if answer == "2024":
         easygui.msgbox(" Great work! you got the answer right")
         player_score += 1
@@ -36,6 +38,7 @@ if player_age <= 18 and player_age >= 15:
       easygui.msgbox("Sorry you got it wrong. You have no more trys left for this question") 
     counter = 1
     answer = easygui.choicebox("How long is Max Verstappen's contract ",choices = Q_2)
+    counter = 0
     if answer == "Until 2028":
         easygui.msgbox("Great work! you got it right")
         player_score +=1
@@ -50,6 +53,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Sorry you got it wrong. You have no more trys left for this question") 
         counter = 1
         answer = easygui.choicebox("Who is the richest formula 1 driver?",choices = Q_3)  
+    counter = 0
     if answer == "Lewis":
         easygui.msgbox("Great work! you got it right")
         player_score +=1
@@ -64,6 +68,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Sorry you got it wrong. You have no more trys left for this question")
     counter = 1
     answer = easygui.choicebox("In what year did formula 1 begin",choices = Q_4)
+    counter = 0
     if answer == "1950":
         easygui.msgbox("Great work! you got it right")
         player_score +=1
@@ -78,6 +83,7 @@ if player_age <= 18 and player_age >= 15:
         easygui.msgbox("Sorry you got it wrong. You have no more trys left for this question")
     counter = 1
     answer = easygui.choicebox("What two drivers are currently at Mclaren?",choices = Q_5)
+    counter = 0
     if answer == "Lando and Oscar":
         easygui.msgbox ("Great work! you got it right")
         player_score +=1
